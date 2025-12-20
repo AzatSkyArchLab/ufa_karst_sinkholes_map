@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """
 Скрипт для скачивания фото карстовых провалов.
-Запусти СРАЗУ после скачивания — ссылки Google быстро истекают!
 
 Использование:
     python download_images.py
@@ -126,14 +125,9 @@ for i, (filename, url) in enumerate(IMAGES, 1):
         print(f"❌ [{i}/{len(IMAGES)}] {filename} - {result}")
         fail += 1
 
-print()
-print("=" * 40)
-print(f"✅ Скачано: {ok}")
-print(f"⏭️  Пропущено: {skip}")
-print(f"❌ Ошибок: {fail}")
-print("=" * 40)
+
 
 if fail > 0:
     print()
-    print("⚠️  Некоторые фото не скачались.")
+    print("Некоторые фото не скачались.")
     print("   Возможно ссылки истекли — скачай свежий KML и попробуй снова.")
