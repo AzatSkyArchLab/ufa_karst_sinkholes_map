@@ -1,0 +1,5 @@
+# Images folder
+
+This folder contains sinkhole photographs.
+
+Run `download_photos.py` to populate this folder from the original KML data.
